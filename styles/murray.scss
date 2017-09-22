@@ -1,0 +1,31 @@
+#murray-container {
+  width: 960px;
+  margin: 0 auto;
+  background-color: $primary-color;
+  display: flex;
+  flex-flow: row wrap;
+
+  .murray {
+    flex: 1;
+    background-color: lighten($secondary-color, 25%);
+  }
+}
+
+@media (max-width: 480px) {
+  #murray-container {
+    width: 100%;
+    margin: 0;
+
+    .murrays {
+      
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 960px) {
+  #murray-container {
+    width: 100%;
+    margin: 0;
+
+  }
+}

@@ -6,10 +6,11 @@ const app = express();
 
 app.set('view engine', 'ejs');
 app.use(sassMiddleware({
-  src: __dirname,
+  src: path.join(__dirname, 'styles'),
   dest: path.join(__dirname, 'public'),
   debug: true,
-  outputStyle: 'compressed'
+  outputStyle: 'expanded',
+  prefix: '/public'
 }));
 app.use('/public', express.static(path.join(__dirname, 'public')));
 

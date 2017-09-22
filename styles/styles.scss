@@ -1,0 +1,32 @@
+@import './variables';
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $primary-color;
+}
+
+@mixin alert($bg-color) {
+  display: block;
+  text-align: center;
+  font-size: 3em;
+  background-color: $bg-color;
+}
+
+.blue-alert {
+  @include alert(#00E);
+  // background-color: #00E;
+  color: white;
+}
+
+.green-alert {
+  @include alert(#0E0);
+}
+
+@import './murray';

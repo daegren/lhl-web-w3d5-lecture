@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #00EEFF;
+}
+
+.blue-alert {
+  display: block;
+  text-align: center;
+  font-size: 3em;
+  background-color: #00E;
+  color: white;
+}
+
+.green-alert {
+  display: block;
+  text-align: center;
+  font-size: 3em;
+  background-color: #0E0;
+}
+
+#murray-container {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #00EEFF;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#murray-container .murray {
+  flex: 1;
+  background-color: #ff8880;
+}
+
+@media (max-width: 480px) {
+  #murray-container {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 960px) {
+  #murray-container {
+    width: 100%;
+    margin: 0;
+  }
+}
