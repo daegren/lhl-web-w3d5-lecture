@@ -1,0 +1,26 @@
+@import "variables";
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin card {
+  border: 1px solid grey;
+  @include border-radius($card-radius);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+@mixin phone {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 960px) {
+    @content;
+  }
+}

@@ -1,0 +1,20 @@
+@import "variables";
+
+.navbar {
+  height: $navbar-height;
+  font-size: 2em;
+  line-height: $navbar-height;
+  position: fixed;
+  background: #ccc;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  h1 {
+    margin: 0 0.5em;
+  }
+}
+
+main {
+  margin-top: $navbar-height + $navbar-height * 0.2;
+}

@@ -1,0 +1,31 @@
+@import "reset";
+@import "mixins";
+@import "base";
+
+#murray-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+  margin: 0 auto;
+
+  @include tablet {
+    width: 100%;
+  }
+
+  .murray {
+    @include card;
+    flex: 1 0 auto;
+    margin: 8px;
+
+    header img {
+      width: 100%;
+      border-top-right-radius: $card-radius;
+      border-top-left-radius: $card-radius;
+    }
+
+    .body {
+      text-align: center;
+      font-size: 2em;
+    }
+  }
+}
