@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title></title>
+    <link rel="stylesheet" href="/public/styles/app.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Murrays</h1>
+    </nav>
+    <main>
+      <div id="murray-container">
+        <% for (const murray of murrays) { %>
+          <article class="murray">
+            <header>
+              <img src="http://fillmurray.com/300/200" />
+            </header>
+            <section class='body'>
+              <%= murray.name %>
+            </section>
+          </article>
+        <% } %>
+      </div>
+    </main>
+
+  </body>
+</html>

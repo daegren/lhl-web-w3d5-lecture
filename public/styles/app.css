@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  line-height: 80px;
+  background: #ccc;
+}
+
+.navbar h1 {
+  margin: 0 1em;
+}
+
+main {
+  margin-top: 96px;
+}
+
+#murray-container {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#murray-container .murray {
+  flex: 1 0 auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 8px;
+}
+
+#murray-container .murray img {
+  width: 100%;
+}
+
+#murray-container .murray .body {
+  text-align: center;
+  font-size: 20px;
+}
