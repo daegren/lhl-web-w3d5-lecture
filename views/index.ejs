@@ -14,7 +14,8 @@
     <main>
       <div id="murray-container">
         <% for (const murray of murrays) { %>
-          <article class="murray">
+          <% const active = (murrays.indexOf(murray) % 2 === 0 ? 'active' : '') %>
+          <article class="murray <%= active %>">
             <header>
               <img src="http://fillmurray.com/300/200" />
             </header>
