@@ -26,16 +26,24 @@ main {
   margin-top: 96px; }
 
 #murray-container {
-  width: 960px;
-  margin: 0 auto;
+  width: 100%;
   display: flex;
   flex-wrap: wrap; }
+  @media (min-width: 960px) {
+    #murray-container {
+      width: 960px;
+      margin: 0 auto; } }
   #murray-container .murray {
-    flex: 1 0 auto;
     border: 1px solid gray;
     border-radius: 5px;
-    margin: 8px;
-    max-width: 33.3333333%; }
+    margin: 0.5em auto;
+    width: 100%; }
+    @media (min-width: 500px) {
+      #murray-container .murray {
+        width: 50%; } }
+    @media (min-width: 960px) {
+      #murray-container .murray {
+        width: 33.33%; } }
     #murray-container .murray img {
       width: 100%;
       border-top-left-radius: 5px;
@@ -46,5 +54,3 @@ main {
       padding: 10px 0; }
     #murray-container .murray.active {
       background-color: #ccc; }
-    .test #murray-container .murray {
-      color: yellow; }
