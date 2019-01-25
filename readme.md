@@ -1,4 +1,4 @@
-# SASS
+# SASS/SCSS
 
 - Intro [10 min]
 - what is a preprocessor
@@ -12,7 +12,6 @@
 - how to use Sass with a node project
 - DEMO [40 min]
 - convert CSS to SASS
-
 
 # Responsive Design
 
