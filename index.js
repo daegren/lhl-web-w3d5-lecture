@@ -12,7 +12,7 @@ app.use(
     src: path.join(__dirname, "styles"),
     dest: path.join(__dirname, "public", "styles"),
     debug: true,
-    outputStyle: "nested",
+    outputStyle: "expanded",
     prefix: "/styles" // Where prefix is at <link rel="stylesheets" href="prefix/style.css"/>
   })
 );
